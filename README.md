@@ -74,8 +74,8 @@ _filterNames CopyOnWriteArrayList<E> (id=187)<br>
 [55] "Init Filter" (id=270)<br>
 [56] "Sync Auth Filter" (id=271)<br>
 [57] "SPA Filter" (id=272)<br>
-
-
+<br>
+<br>
 In newer Liferay versions (from 7), we are configuring servlet filters within the OSGI container<br>
 <br>
 Since Liferay has adopted OSGi, it’s important to understand the<br>
