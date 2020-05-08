@@ -1,7 +1,9 @@
 
 This is an example Servlet Filter, tested on Liferay DXP 7.2 fix pack 5,  on the 8th of May 2020.
 <br>
+<br>
 NOTES:<br>
+<br>
 It is very important to add this line to liferay-hook.xml:
     <before-filter>SSO Open SSO Filter</before-filter>
 Otherwise there will be ClassNotFoundException in the console log.
@@ -9,6 +11,7 @@ Otherwise there will be ClassNotFoundException in the console log.
 <br>
 I have not tested this myself but we can print a list of the filters, so we can decide where to put our own filter:
 (During startup, in the InvokeFilterHelper during the registerFilterMapping):
+<br>
 <br>
 _filterNames CopyOnWriteArrayList<E> (id=187)<br>
     array Object[58] (id=201)<br>
@@ -39,8 +42,8 @@ _filterNames CopyOnWriteArrayList<E> (id=187)<br>
 [24] "ETag Filter - JSP" (id=233)<br>
 [25] "Cache Filter - Friendly" (id=234)<br>
 [26] "Cache Filter - Layout" (id=235)<br>
-[27] "Cache Filter - Resource" (id=23<br>6)<br>
-[28] "Cache Filter - Resource JSP" (i<br>d=237)<br>
+[27] "Cache Filter - Resource" (id=236)<br>
+[28] "Cache Filter - Resource JSP" (id=237)<br>
 [29] "I18n Filter" (id=238)<br>
 [30] "Secure Friendly URL Servlet Filter" (id=239)<br>
 [31] "Secure Main Servlet Filter" (id=240)<br>
