@@ -74,3 +74,18 @@ _filterNames CopyOnWriteArrayList<E> (id=187)<br>
 [55] "Init Filter" (id=270)<br>
 [56] "Sync Auth Filter" (id=271)<br>
 [57] "SPA Filter" (id=272)<br>
+
+
+In newer Liferay versions (from 7), we are configuring servlet filters within the OSGI container<br>
+<br>
+Since Liferay has adopted OSGi, it’s important to understand the<br>
+previous concept of implementing a servlet filter v. implementing a<br>
+servlet filter in the OSGi container.<br>
+<br>
+OSGi filters are configured and registered using the OSGi HTTP service. <br>
+They should be created like this:<br>
+blade create -t service -v 7.2 -p com.liferay.test SupportApp -s SupportAppServ<br>
+<br>
+Detailed steps can be found here:<br>
+https://lifedev-solutions.blogspot.com/2019/11/servlet-filter-in-liferay-72.html
+
