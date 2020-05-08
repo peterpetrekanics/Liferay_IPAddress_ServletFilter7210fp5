@@ -4,8 +4,9 @@ This is an example Servlet Filter, tested on Liferay DXP 7.2 fix pack 5,  on the
 <br>
 NOTES:<br>
 <br>
-It is very important to add this line to liferay-hook.xml:
-    <before-filter>SSO Open SSO Filter</before-filter>
+It is very important to add this line to liferay-hook.xml:<br>
+    <code>< before-filter>SSO Open SSO Filter </ before-filter></code><br>
+<br>
 Otherwise there will be ClassNotFoundException in the console log.
 
 <br>
