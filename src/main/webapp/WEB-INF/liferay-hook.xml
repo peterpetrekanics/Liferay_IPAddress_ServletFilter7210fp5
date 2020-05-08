@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 7.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_7_2_0.dtd">
+
+<hook>
+	<servlet-filter>
+		<servlet-filter-name>SampleIPAddresFilter</servlet-filter-name>
+		<servlet-filter-impl>com.example.LiferayIPAddressFilter</servlet-filter-impl>
+		<init-param>
+			<param-name>initparam</param-name>
+			<param-value>Hi IP Address Filter</param-value>
+		</init-param>
+	</servlet-filter>
+	<servlet-filter-mapping>
+		<servlet-filter-name>SampleIPAddresFilter</servlet-filter-name>
+		<before-filter>SSO Open SSO Filter</before-filter>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</servlet-filter-mapping>
+</hook>
